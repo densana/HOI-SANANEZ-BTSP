@@ -5,44 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOI</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css>
+    <link rel="stylesheet" href="./css/stylenuevo.css">
     <script src="https://kit.fontawesome.com/82f5c4b4c3.js" crossorigin="anonymous"></script>
 </head>
-<body id="main">
+<body>
     <header>
-        <nav>
-            <a href="#" class="logo">
-                <img src="./images/hoilogo.png" alt="logo">
-            </a>
-            <label for="burguer" class="boton">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-            <input type="checkbox" id="burguer">
-            <ul class="menuburguer">
-                <li class="titulosmenu"><a href="./pages/hola.html">Hola!</a></li>
-                <li class="titulosmenu"><a href="./pages/yoga.html">Yoga/Ayurveda</a></li>
-                <li class="titulosmenu"><a href="./pages/feng.html">Feng Shui</a></li>
-                <li class="titulosmenu"><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/hoilogo.png" alt="" width="130" height="40">
+                    </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" style= color:cadetblue aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/hola.html">Hola!</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/yoga.html">Yoga</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/feng.html">Feng</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <section>
-        <div class="portadahome">
-            <h1 class="titulohome">HOUSE OF IRUPE</h1>
-            <p class="textohome">Un espacio saludable se define como un espacio de vida que nos aporta confort y bienestar propiciando la relajación y el buen descanso de nuestro cuerpo y nuestra mente. Hoy en día pasamos la mayor parte de nuestro tiempo en el interior de edificios, ya sea en el trabajo o en nuestra casa, de modo que la relación entre nuestro hábitat y nuestra salud tiene un papel vital. 
-                Mediante los sentidos podemos percibir factores como la temperatura, la humedad o la luz, pero hay otros factores que también pueden afectar a nuestra salud.</p>
-        </div>
-        <div>
-            <p class="textohome2">Un espacio saludable se define como un espacio de vida que nos aporta confort y bienestar propiciando la relajación y el buen descanso de nuestro cuerpo y nuestra mente. Hoy en día pasamos la mayor parte de nuestro tiempo en el interior de edificios, ya sea en el trabajo o en nuestra casa, de modo que la relación entre nuestro hábitat y nuestra salud tiene un papel vital. 
-                Mediante los sentidos podemos percibir factores como la temperatura, la humedad o la luz, pero hay otros factores que también pueden afectar a nuestra salud.</p>
-        </div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/pexels-scott-webb-213727.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>House of Irupe</h5>
+                  <p>Diseñamos espacios Saludables</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/pexels-mikhail-nilov-6740754.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Yoga</h5>
+                  <p>Como es adentro es afuera</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/pexels-content-pixie-2736497.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Feng Shui</h5>
+                  <p>Convierte tu casa en tu hogar</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              Los espacios que habitamos son una extensión de nuestra esencia y un reflejo de nuestro mundo interior.
+              Nuestro hogar es una herramienta de autoconocimiento y tambien permite a las demás personas que lleguen a conocer más de nosotros. 
+              La decoración de nuestro espacio expresa la identidad de uno mismo, e infiere en nuestra vida de forma directa. Te invito a conocer mas...  
+            </div>
+          </div>
     </section>
     <footer>
-        <ul class="redes">
-            <li><img src="images/wtsp.png" alt="wtsp"></li>
-            <li><img src="images/in.png" alt="in"></li>
-            <li><img src="images/gmail.png" alt="gmail"></li>
-        </ul>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="images/wtsp.png" width="25" height="25"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="images/in.png" width="25" height="25"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="images/gmail.png" width="25" height="25"></a>
+            </li>
+          </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

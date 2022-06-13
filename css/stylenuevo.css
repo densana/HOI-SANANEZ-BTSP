@@ -1,0 +1,48 @@
+header {
+    background-color: #E5E1DC;
+    justify-content: space-between;
+}
+
+.navbar-toggler,
+.navbar-toggler-icon,
+.nav-link {
+    color:white;
+}
+
+.carousel-item {
+    max-height: 500px;
+}
+
+.card-body {
+    font-size: 16px;
+    text-align: center;
+    margin:50px;
+}
+
+.card-img-overlay {
+    color:rgb(53, 103, 87);
+    font-size: 25px;
+    padding-top: 250px;
+    padding-left: 100px;
+}
+
+#portadahola {
+    border: none;
+}
+
+#cardhola {
+    margin:20px;
+}
+
+footer {
+    background-color: #E5E1DC;
+}
+
+@media (max-width: 576px) {
+    .card-body {
+        font-size: 12px;
+        text-align: center;
+        margin: 5px;
+    }
+}
+

@@ -5,61 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOI</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css>
+    <link rel="stylesheet" href="../css/stylenuevo.css">
     <script src="https://kit.fontawesome.com/82f5c4b4c3.js" crossorigin="anonymous"></script>
 </head>
-<body id="main">
+<body>
     <header>
-        <nav>
-            <a href="#" class="logo">
-                <img src="../images/hoilogo.png" alt="logo">
-            </a>
-            <label for="burguer" class="boton">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-            <input type="checkbox" id="burguer">
-            <ul class="menuburguer">
-                <li class="titulosmenu"><a href="../index.html">Home</a></li>
-                <li class="titulosmenu"><a href="./yoga.html">Yoga</a></li>
-                <li class="titulosmenu"><a href="./feng.html">Feng Shui</a></li>
-                <li class="titulosmenu"><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../images/hoilogo.png" alt="" width="130" height="40">
+                    </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                  <li class="nav-item">
+                    <a class="nav-link active" style= color:cadetblue aria-current="page" href="#">Hola!</a>
+                  </li>
+                    <a class="nav-link" href="../pages/yoga.html">Yoga</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/feng.html">Feng</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-    <section id="sectionhola">
-        <div class="portadahola">
-            <h2 class="titulohola">DISEÑAMOS ESPACIOS SALUDABLES</h2>
-        </div>
-        <div id="about">
-            <img class="holaasana"src="../images/1pexels-elina-fairytale-3822630.jpg" alt="about2">
-            <div class="textohola">Hola!
-                    Soy Denise,
+    <section>
+        <div class="card d-none d-md-block bg-dark text-white" id="portadahola"> 
+            <img src="../images/pexels-content-pixie-2736497.jpg" class ="card-img " alt="...">
+            <div class="card-img-overlay">
+              <p class="card-text">Diseño espacios saludables</p>
+            </div>
+          </div>
+        <div class="card" id="cardhola">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/1pexels-elina-fairytale-3822630.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Hola!</h5>
+                  <p class="card-text">Soy Denise,
                     Me forme como diseñadora e instructora de Yoga y también estudié Ayurveda y Feng Shui.
                     Combino herramientas y recursos de estas áreas para analizar espacios y hábitos de vida y diseñar un
-                    ambiente para acercarte más a una vida equilibrada.
+                    ambiente para acercarte más a una vida equilibrada.</p>
+                  <p class="card-text"><small class="text-muted">Querés saber mas?</small></p>
+                </div>
+              </div>
             </div>
-        </div>
-        <div id="doshas">
-            <div>DISEÑO</div>
-            <div>
-                <img class="ayur1" src="../images/nalenayurveda1.jpg" alt="about2">
+          </div>
+          <div class="card-group">
+            <div class="card col-sm-12">
+              <div class="card-body">
+                <h5 class="card-title">Diseño</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <img src="../images/nalenayurveda1.jpg" class="card-img-bottom" alt="...">
             </div>
-            <div>FENG SHUI</div>
-            <div>
-                <img class="elementosfeng" src="../images/nalenayurveda2.jpg" alt="about2">
+            <div class="card col-sm-12">
+              <div class="card-body">
+                <h5 class="card-title">Yoga</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <img src="../images/nalenayurveda2.jpg" class="card-img-bottom" alt="...">
             </div>
-            <div>AYURVEDA</div>
-            <div>
-                <img class="ayur2" src="../images/elementosfeng.jpg" alt="about2">
+            <div class="card col-sm-12">
+              <div class="card-body">
+                <h5 class="card-title">Feng Shui</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+              <img src="../images/elementosfeng.jpg" class="card-img-bottom" alt="...">
             </div>
-        </div>
+          </div>
     </section>
     <footer>
-        <ul class="redes">
-            <li><img src="../images/wtsp.png" alt="wtsp"></li>
-            <li><img src="../images/in.png" alt="in"></li>
-            <li><img src="../images/gmail.png" alt="gmail"></li>
-        </ul>
-</footer>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><img src="../images/wtsp.png" width="25" height="25"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="../images/in.png" width="25" height="25"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="../images/gmail.png" width="25" height="25"></a>
+              </li>
+          </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
