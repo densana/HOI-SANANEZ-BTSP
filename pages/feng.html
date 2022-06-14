@@ -5,48 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOI</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css>
+    <link rel="stylesheet" href="../css/stylenuevo.css">
     <script src="https://kit.fontawesome.com/82f5c4b4c3.js" crossorigin="anonymous"></script>
 </head>
-<body id="main">
+<body>
     <header>
-        <nav>
-            <a href="#" class="logo">
-                <img src="../images/hoilogo.png" alt="logo">
-            </a>
-            <label for="burguer" class="boton">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../images/hoilogo.png" alt="" width="130" height="40">
+                    </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
-            </label>
-            <input type="checkbox" id="burguer">
-            <ul class="menuburguer">
-                <li class="titulosmenu"><a href="../index.html">Home</a></li>
-                <li class="titulosmenu"><a href="./hola.html">Hola!</a></li>
-                <li class="titulosmenu"><a href="./yoga.html">Yoga</a></li>
-                <li class="titulosmenu"><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/hola.html">Hola</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/yoga.html">Yoga</a>
+                      </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" style= color:cadetblue aria-current="page" href="#">Feng</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <section>
-        <div class="portadafeng">
+        <div class="card d-none d-md-block bg-dark text-white" id="portadahola"> 
+            <img src="../images/portada2.jpg" class ="card-img " alt="...">
+            <div class="card-img-overlay" id="titulofeng">
+              <p class="card-text">Convierte tu casa en tu hogar</p>
+            </div>
+          </div>
+        <div class="card" id="cardfeng">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/elementos.jpg" class="img-fluid rounded" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body" id="elementos">
+                  <h5 class="card-title">El chi</h5>
+                  <p class="card-text">La energía Chi es pura cuando primero entra en la tierra, pero rápidamente pasa por varias transformaciones cuando se manifiesta en lo físico. Esta manifestación crea cinco expresiones de la energía chi que conocemos como elementos del feng shui. Estos cinco elementos deben interactuar para recrear la perfección de la energía chi en lo físico.</p>
+                  <p class="card-text"><small class="text-muted">Querés saber mas?</small></p>
+                </div>
+              </div>
+            </div>
         </div>
-        <div id="sectionfeng">
-            <img class="elementos" src="../images/elementos.jpg" alt="about2">
-            <div class="sobreelementos">La energía Chi es pura cuando primero entra en la tierra, pero rápidamente pasa por varias transformaciones cuando se manifiesta en lo físico. Esta manifestación crea cinco expresiones de la energía chi que conocemos como elementos del feng shui. Estos cinco elementos deben interactuar para recrear la perfección de la energía chi en lo físico.
+        <div class="card" id="cardfeng2">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <div class="card-body" id="elementos">
+                  <h5 class="card-title">Feng Shui</h5>
+                  <p class="card-text">El Feng Shui es una filosofía que se basa en encontrar el equilibrio y aportar energías positivas a los lugares que habitamos. Su traducción, 'Viento y Agua', hace referencia al movimiento del Chi o flujo vital de energía, que forma parte de todo y todos y cuya circulación propicia salud, prosperidad y una vida armoniosa. Ya sabes: si cuidas de tu casa, tu casa cuidará de ti. Buscar un lugar óptimo para vivir: este ha sido el objetivo del Feng Shui desde sus inicios. La clave es crear un ambiente positivo y armonioso que mejore la vida de sus ocupantes.</p>
+                  <p class="card-text"><small class="text-muted">Querés saber mas?</small></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="../images/deco.jpg" class="img-fluid rounded" alt="...">
+              </div>
             </div>
-            <div class="sobrefilosofia">El Feng Shui es una filosofía que se basa en encontrar el equilibrio y aportar energías positivas a los lugares que habitamos. Su traducción, 'Viento y Agua', hace referencia al movimiento del Chi o flujo vital de energía, que forma parte de todo y todos y cuya circulación propicia salud, prosperidad y una vida armoniosa. Ya sabes: si cuidas de tu casa, tu casa cuidará de ti. Buscar un lugar óptimo para vivir: este ha sido el objetivo del Feng Shui desde sus inicios. La clave es crear un ambiente positivo y armonioso que mejore la vida de sus ocupantes.</p>
-            </div>
-            <img class="deco" src="../images/deco.jpg" alt="about2">
-            <img class="bagua" src="../images/bagua.jpg" alt="about2">
-            <div class="sobrebagua">EL MAPA NO ES EL TERRITORIO El mapa de feng shui bagua es un mapa de forma octogonal que le permite evaluar en términos de feng shui cualquier espacio de vida o de trabajo. El feng shui bagua es una herramienta de feng shui muy importante e indispensable cuando deseamos armonizar un lugar y los elementos en él.
+        </div>
+        <div class="card" id="cardfeng3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/bagua.jpg" class="img-fluid rounded" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body" id="elementos">
+                  <h5 class="card-title">El mapa no es el territorio</h5>
+                  <p class="card-text">El mapa de feng shui bagua es un mapa de forma octogonal que le permite evaluar en términos de feng shui cualquier espacio de vida o de trabajo. El feng shui bagua es una herramienta de feng shui muy importante e indispensable cuando deseamos armonizar un lugar y los elementos en él.</p>
+                  <p class="card-text"><small class="text-muted">Querés saber mas?</small></p>
+                </div>
+              </div>
             </div>
         </div>
     </section>
     <footer>
-        <ul class="redes">
-            <li><img src="../images/wtsp.png" alt="wtsp"></li>
-            <li><img src="../images/in.png" alt="in"></li>
-            <li><img src="../images/gmail.png" alt="gmail"></li>
-        </ul>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><img src="../images/wtsp.png" width="25" height="25"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="../images/in.png" width="25" height="25"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="../images/gmail.png" width="25" height="25"></a>
+              </li>
+          </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
