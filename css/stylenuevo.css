@@ -1,7 +1,26 @@
 /*header*/
 header {
     background-color: #E5E1DC;
- }
+}
+
+.navbar,
+#tituloyoga,
+#titulohola,
+#titulofeng {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}
+ 
+@keyframes aparecer {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+    
+}
 
 .navbar-toggler,
 .navbar-toggler-icon,
@@ -14,6 +33,7 @@ header {
     color: white;
     font-weight: bolder;
 }
+
 /*portadas*/
 .carousel-item {
     max-height: 500px;
@@ -24,15 +44,107 @@ header {
     border: none;
 }
 
+/*home*/
+#card-links,
+#card-links2 {
+    background-color:#f1f3f7;
+}
+
+/*yoga*/
+.animacionyoga {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.pelotitas {
+    animation: yoga 5s infinite ease-in-out;
+}
+
+.pelotitas:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.pelotitas:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.pelotitas:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.pelotitas:nth-child(4) {
+    animation-delay: 2s;
+}
+
+.pelotitas:nth-child(5) {
+    animation-delay: 2.5s;
+}
+
+@keyframes yoga {
+	0%,
+	100% {
+		opacity: 0;
+	}
+    
+    50% {
+		opacity: 1;
+	}
+}
+
+/*feng*/
+.pelotita {
+    animation: animacionfeng 6s linear 0s infinite normal forwards;
+}
+
+@keyframes animacionfeng {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/*contacto*/
 .portadacontacto {
     width: 100%;
     height: 550px;
     background: linear-gradient(to bottom, #E5E1DC, #e7eaf2,#bbcdce);
     background-position: relative;
- }
+}
 
+.contacto {
+    animation-duration: 3s;
+    animation-name: formulario;
+}
+
+@keyframes formulario {
+   0% {
+       opacity:0;
+       margin-top:0;
+   }
+   100% {
+       opacity:1;
+       margin-top:30px;
+   }  
+}
+
+.btn {
+    background-color: cadetblue;
+    border: none;
+}
+
+.btn:hover {
+    background-color:rgb(53, 103, 87);
+}
+/*footer*/
 footer {
     background-color: #E5E1DC;
+    height: 100px;
+    padding-top: 30px;
 }
 
 @media screen and (max-width: 576px) {
@@ -40,10 +152,17 @@ footer {
     #card-home {
         margin:20px;
     }
+
     #textohome {
         text-align: center;
         font-size: 12px;
     }
+
+    #homeextra {
+        margin:15px;
+        row-gap: 10px;
+    }
+
 /*hola*/
     #cardhola,
     #cardfeng,
@@ -55,51 +174,72 @@ footer {
         color:rgb(102, 102, 102);
         background: rgb(236, 241, 236);
     }
+    
 /*yoga*/
     #tituloyoga {
         font-family:Arial, Helvetica, sans-serif;
         color:white;
         font-size: 20px;
         text-align: center;
-        padding-top: 100px;
+        padding-top: 30px;
+    }
+
+    .pelotitas {
+        margin:10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .pelotita {
+        width: 30px;
+        height: 30px;
     }
 
     #sectionyoga {
         font-size:10px;
-        padding: 15px;
+        padding: 10px;
         row-gap: 20px;
+    }
+
+    .titulo-yogasection {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+        color:rgb(53, 103, 87);
     }
 
     #card-yoga1,
     #card-yoga2,
     #card-yoga3 {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
         color:grey;
         background-color: #f4f5f8;
-        text-align: center;
+        text-align:justify;
     }
 
     .asanas {
-        height: 250px;
-        width: 180px;
+        height: 200px;
+        width: 150px;
+        padding-right: 10px;
+        padding-top: 10px;
         padding-bottom: 10px;
         border-radius: 6px;
     }
 
+    /*contacto*/
     .contacto {
         width: 280px;
         height: 400px;
-        margin: 10px;
         padding: 20px;
+        margin-top: 30px;
         position:absolute;
         text-align: left;
         color:cadetblue;
         font-size: 12px;
-    }
-    
-    .btn {
-        background-color: cadetblue;
-        border: none;
     }
 }
 
@@ -113,6 +253,13 @@ footer {
     text-align: center;
     font-size: 16px;
     }
+
+    #homeextra {
+        margin:20px;
+        row-gap: 10px;
+        justify-content: space-around;
+    }
+
 /*hola*/
     #titulohola {
     font-family:Arial, Helvetica, sans-serif;
@@ -124,70 +271,79 @@ footer {
     padding-left: 50px;
     }
 
-#cardhola,
-#cardfeng,
-#cardfeng2,
-#cardfeng3 {
-    margin:20px;
-    color:rgb(102, 102, 102);
-    background: rgb(236, 241, 236);
-}
+    #textohola {
+        font-size: 16px;
+        text-align: center;
+        margin:50px;
+    }
 
-#textohola {
-    font-size: 16px;
-    text-align: center;
-    margin:50px;
-}
+    #cardhola,
+    #card-links,
+    #card-links2,
+    #cardfeng,
+    #cardfeng2,
+    #cardfeng3 {
+        margin: 50px;
+        color:rgb(102, 102, 102);
+        background: rgb(236, 241, 236);
+    }
+
 /*yoga*/
-#tituloyoga {
-    font-family:Arial, Helvetica, sans-serif;
-    color:white;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 200px;
-}
+    #tituloyoga {
+        font-family:Arial, Helvetica, sans-serif;
+        color:white;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 200px;
+    }
+    #sectionyoga {
+        padding: 20px;
+        row-gap: 10px;
+    }
+    
+    .titulo-yogasection {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 50px;
+        font-size: 30px;
+        text-align: center;
+        color:rgb(53, 103, 87)
+    }
+    
+    .pelotitas {
+        margin:30px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .pelotita {
+        width: 60px;
+        height: 60px;
+    }
+    
+    #card-yoga1,
+    #card-yoga2,
+    #card-yoga3 {
+        align-items: center;
+        color:grey;
+        background-color: #f4f5f8;
+        padding-bottom: 20px;
+    }
+    
+    .asanas {
+        height: 400px;
+        width: 300px;
+        border-radius: 8px;
+    }
 
-#sectionyoga {
-    padding: 20px;
-    row-gap: 10px;
-}
-
-#card-yoga1,
-#card-yoga2,
-#card-yoga3 {
-    align-items: center;
-    color:grey;
-    background-color: #f4f5f8;
-    padding-bottom: 20px;
-}
-
-.asanas {
-    height: 400px;
-    width: 300px;
-    border-radius: 8px;
-}
-/*feng*/
-#titulofeng {
-    font-family:Arial, Helvetica, sans-serif;
-    color:white;
-    font-size: 20px;
-    text-align: center;
-    padding-top: 200px;
-}
 /*contacto*/
-.contacto {
-    width: 500px;
-    height: 450px;
-    margin-top: 30px;
-    margin-left:100px;
-    padding: 20px;
-    position:absolute;
-    text-align: left;
-    color:cadetblue;
-}
-
-.btn {
-    background-color: cadetblue;
-    border: none;
-}
+    .contacto {
+        width: 500px;
+        height: 450px;
+        margin-left:100px;
+        margin-top: 30px;
+        padding: 20px;
+        position:absolute;
+        text-align: left;
+        color:cadetblue;
+    }
 }
