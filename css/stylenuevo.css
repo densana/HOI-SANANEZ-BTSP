@@ -1,24 +1,31 @@
 /*header*/
-header {
+header, footer {
   background-color: #E5E1DC;
 }
-header .navbar-toggler,
+header img, footer img {
+  width: 130px;
+  height: 40px;
+}
+header .navbar-toggler, footer .navbar-toggler,
 header .navbar-toggler-icon,
-header .nav-link {
+footer .navbar-toggler-icon,
+header .nav-link,
+footer .nav-link {
   color: white;
   border: none;
 }
-header .navbar-toggler:hover,
+header .navbar-toggler:hover, footer .navbar-toggler:hover,
 header .navbar-toggler-icon:hover,
-header .nav-link:hover {
+footer .navbar-toggler-icon:hover,
+header .nav-link:hover,
+footer .nav-link:hover {
   color: white;
   font-weight: bolder;
 }
 
-.navbar,
-#tituloyoga,
+.navbar, #tituloyoga,
 #titulohola,
-#titulofeng {
+.titulo-yogasection {
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-name: aparecer;
@@ -75,30 +82,33 @@ header .nav-link:hover {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 10px;
-}
-.animacionyoga .pelotitas {
   -webkit-animation: yoga 5s infinite ease-in-out;
           animation: yoga 5s infinite ease-in-out;
 }
-.animacionyoga .pelotitas .pelotitas:nth-child(1) {
+.animacionyoga div:nth-child(1) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
+  background-color: #CEC4C1;
 }
-.animacionyoga .pelotitas .pelotitas:nth-child(2) {
+.animacionyoga div:nth-child(2) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
+  background-color: #96A69B;
 }
-.animacionyoga .pelotitas .pelotitas:nth-child(3) {
+.animacionyoga div:nth-child(3) {
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
+  background-color: #637388;
 }
-.animacionyoga .pelotitas .pelotitas:nth-child(4) {
+.animacionyoga div:nth-child(4) {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
+  background-color: #DDE1E0;
 }
-.animacionyoga .pelotitas .pelotitas:nth-child(5) {
+.animacionyoga div:nth-child(5) {
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
+  background-color: #E5DECC;
 }
 
 @-webkit-keyframes yoga {
@@ -185,9 +195,12 @@ header .nav-link:hover {
 }
 /*footer*/
 footer {
-  background-color: #E5E1DC;
   height: 100px;
   padding-top: 30px;
+}
+footer img {
+  width: 25px;
+  height: 25px;
 }
 
 @media screen and (max-width: 576px) {
@@ -221,8 +234,21 @@ footer {
     margin: 20px;
     font-size: 12px;
     text-align: center;
-    color: rgb(102, 102, 102);
+    color: #666666;
     background: rgb(236, 241, 236);
+  }
+  #cardhola .btn,
+#cardfeng .btn,
+#cardfeng2 .btn,
+#cardfeng3 .btn {
+    background-color: cadetblue;
+    border: none;
+  }
+  #cardhola .btn:hover,
+#cardfeng .btn:hover,
+#cardfeng2 .btn:hover,
+#cardfeng3 .btn:hover {
+    background-color: rgb(53, 103, 87);
   }
 
   /*yoga*/
@@ -243,9 +269,14 @@ footer {
   }
 
   .pelotitas {
-    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .pelotitas img {
     width: 30px;
     height: 30px;
+    margin: 5px;
   }
 
   .pelotita {
@@ -265,7 +296,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    color: rgb(102, 102, 102);
+    color: #666666;
     background-color: #f4f5f8;
     text-align: justify;
   }
@@ -330,8 +361,25 @@ footer {
 #cardfeng2,
 #cardfeng3 {
     margin: 50px;
-    color: rgb(102, 102, 102);
+    color: #666666;
     background: rgb(236, 241, 236);
+  }
+  #cardhola .btn,
+#card-links .btn,
+#card-links2 .btn,
+#cardfeng .btn,
+#cardfeng2 .btn,
+#cardfeng3 .btn {
+    background-color: cadetblue;
+    border: none;
+  }
+  #cardhola .btn:hover,
+#card-links .btn:hover,
+#card-links2 .btn:hover,
+#cardfeng .btn:hover,
+#cardfeng2 .btn:hover,
+#cardfeng3 .btn:hover {
+    background-color: rgb(53, 103, 87);
   }
 
   /*yoga*/
@@ -352,9 +400,14 @@ footer {
   }
 
   .pelotitas {
-    margin: 30px;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  .pelotitas img {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
   }
 
   .pelotita {
@@ -370,7 +423,7 @@ footer {
 #sectionyoga #card-yoga2,
 #sectionyoga #card-yoga3 {
     align-items: center;
-    color: rgb(102, 102, 102);
+    color: #666666;
     background-color: #f4f5f8;
     padding-bottom: 20px;
   }

@@ -13,3 +13,11 @@
     text-align: center;
     color: $color4;
 }
+
+@mixin botones {
+    background-color: $color6;
+    border: none;
+    &:hover {
+        background-color: $color4;
+    }
+}
