@@ -1,0 +1,23 @@
+@mixin titulosS {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: $color4;
+}
+
+@mixin titulosG {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: $color4;
+}
+
+@mixin botones {
+    background-color: $color6;
+    border: none;
+    &:hover {
+        background-color: $color4;
+    }
+}

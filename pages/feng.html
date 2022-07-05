@@ -8,7 +8,7 @@
     <meta name="keywords" content="FENG SHUI PROFESIONAL, BAGUA, ELEMENTOS, AREAS DEL BAGUA, CURAS FENG SHUI">
     <title>HOI FENG SHUI</title>
     <link rel="stylesheet" href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css>
-    <link rel="stylesheet" href="../css/stylenuevo.css">
+    <link rel="stylesheet" href="../scss/stylenuevo.css">
     <script src="https://kit.fontawesome.com/82f5c4b4c3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -30,10 +30,10 @@
                         <a class="nav-link" href="../pages/hola.html">Hola</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../pages/yoga.html">Yoga</a>
-                      </li>
+                    <a class="nav-link active" style= color:cadetblue aria-current="page" href="#">Feng Shui</a>
+                    </li>
                     <li class="nav-item">
-                    <a class="nav-link active" style= color:cadetblue aria-current="page" href="#">Feng</a>
+                      <a class="nav-link" href="../pages/lifestyle.html">Lifestyle</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="../pages/contacto.html">Contacto</a>
@@ -44,60 +44,69 @@
           </nav>
     </header>
     <section>
-        <div class="card d-none d-md-block bg-dark text-white" id="portadahola"> 
-            <img src="../images/portada2.jpg" class ="card-img " alt="yoga casa">
+        <div class="card d-md-block bg-dark text-white" id="portadahola"> 
+            <img src="../images/ilu-feng.svg" class ="card-img " alt="yoga casa">
+            <div class="card-img-overlay" id="house-home2">
+              <p class="card-title">¿ CÓMO HABITAS TU ESPACIO ?</p>
+              <p class="card-text d-none d-md-block">
+              Te sentis cómodo en él, prendes sahumerios, te gusta tener plantas, percibis la energia en tu entorno, dejas ir las cosas que ya no usas?</p>
+            </div>
         </div>
         <div class="row">
           <h1 class="titulo-yogasection">FENG SHUI</h1>
           <p class="titulo-yogasection">Convierte tu casa en tu hogar.</p>
         </div>
-        <div class="card" id="cardfeng">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="../images/elementos.jpg" class="img-fluid rounded" alt="elementos">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body" id="elementos">
-                  <h5 class="card-title">El chi</h5>
-                  <p class="card-text">La energía Chi es pura cuando primero entra en la tierra, pero rápidamente pasa por varias transformaciones cuando se manifiesta en lo físico. Esta manifestación crea cinco expresiones de la energía chi que conocemos como elementos del feng shui. Estos cinco elementos deben interactuar para recrear la perfección de la energía chi en lo físico.</p>
-                  <div class="animacionyoga">
-                    <img class="pelotita" src="../images/Recurso 1.png">
-                    <img class="pelotita" src="../images/Recurso 2.png">
-                    <img class="pelotita" src="../images/Recurso 3.png">
-                    <img class="pelotita" src="../images/Recurso 4.png">
-                    <img class="pelotita" src="../images/Recurso 5.png">
-                   </div>
-                </div>
-              </div>
+        <div class="row">
+          <div class="animacionyoga">
+            <div class="pelotitas">
+              <img src="../images/fuego.png">
             </div>
+            <div class="pelotitas">
+              <img src="../images/tierra.png">
+            </div>
+            <div class="pelotitas">
+              <img src="../images/agua.png">
+            </div>
+            <div class="pelotitas">
+              <img src="../images/metal.png">
+            </div>
+            <div class="pelotitas">
+              <img src="../images/madera.png">
+            </div>
+           </div>
         </div>
-        <div class="card" id="cardfeng2">
-            <div class="row g-0">
-              <div class="col-md-8">
-                <div class="card-body" id="elementos">
-                  <h5 class="card-title">Feng Shui</h5>
-                  <p class="card-text">El Feng Shui es una filosofía que se basa en encontrar el equilibrio y aportar energías positivas a los lugares que habitamos. Su traducción, 'Viento y Agua', hace referencia al movimiento del Chi o flujo vital de energía, que forma parte de todo y todos y cuya circulación propicia salud, prosperidad y una vida armoniosa. Ya sabes: si cuidas de tu casa, tu casa cuidará de ti. Buscar un lugar óptimo para vivir: este ha sido el objetivo del Feng Shui desde sus inicios. La clave es crear un ambiente positivo y armonioso que mejore la vida de sus ocupantes.</p>
+        <div class="row row-cols-1 row-cols-md-3" id="sectionyoga">
+            <div class="col">
+                <div class="card" id="card-yoga1">
+                    <div class="card-body">
+                      <h5 class="card-title">Feng Shui</h5>
+                      <p class="card-text">El Feng Shui es una filosofía que se basa en encontrar el equilibrio y aportar energías positivas a los lugares que habitamos. Su traducción, 'Viento y Agua', hace referencia al movimiento del Chi o flujo vital de energía, que forma parte de todo y todos y cuya circulación propicia salud, prosperidad y una vida armoniosa. Ya sabes: si cuidas de tu casa, tu casa cuidará de ti. Buscar un lugar óptimo para vivir: este ha sido el objetivo del Feng Shui desde sus inicios. La clave es crear un ambiente positivo y armonioso que mejore la vida de sus ocupantes.</p>
+                    </div>
+                    <img src="../images/living.svg" class="asanas" alt="feng-shui">
                 </div>
-              </div>
-              <div class="col-md-4">
-                <img src="../images/deco.jpg" class="img-fluid rounded" alt="decoracion feng shui">
-              </div>
             </div>
-        </div>
-        <div class="card" id="cardfeng3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="../images/bagua.jpg" class="img-fluid rounded" alt="bagua">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body" id="elementos">
-                  <h5 class="card-title">El mapa no es el territorio</h5>
-                  <p class="card-text">El mapa de feng shui bagua es un mapa de forma octogonal que le permite evaluar en términos de feng shui cualquier espacio de vida o de trabajo. El feng shui bagua es una herramienta de feng shui muy importante e indispensable cuando deseamos armonizar un lugar y los elementos en él.</p>
-                  <p class="card-text"><small class="text-muted">Querés hacer el bagua de tu casa?</small></p>
-                  <a class="btn btn-primary" href="../pages/contacto.html" role="button">Quiero!</a>
+            <div class="col">
+                <div class="card" id="card-yoga2">
+                    <div class="card-body">
+                      <h5 class="card-title">El chi</h5>
+                      <p class="card-text">La energía Chi es pura cuando primero entra en la tierra, pero rápidamente pasa por varias transformaciones cuando se manifiesta en lo físico. Esta manifestación crea cinco expresiones de la energía chi que conocemos como elementos del feng shui. Estos cinco elementos (tierra, agua, metal, fuego y madera) deben interactuar para recrear la perfección de la energía chi en lo físico.</p>
+                      <p class="card-text"><small class="text-muted">Querés saber cuales son?</small></p>
+                      <a class="btn btn-primary" id="boton-feng" href="../pages/contacto.html" role="button">Quiero!</a>
+                    </div>
+                    <img src="../images/objetos.svg" class="asanas" alt="decoracion">
                 </div>
-              </div>
             </div>
+            <div class="col">
+                <div class="card" id="card-yoga3">
+                    <div class="card-body">
+                      <h5 class="card-title">El mapa no es el territorio</h5>
+                      <p class="card-text">El mapa de feng shui bagua es un mapa de forma octogonal que le permite evaluar en términos de feng shui cualquier espacio de vida o de trabajo. El feng shui bagua es una herramienta de feng shui muy importante e indispensable cuando deseamos armonizar un lugar y los elementos en él. Divide el espacio en 8 sectores que se relacionan con diferentes aspectos de la vida.</p>
+                      <p class="card-text"><small class="text-muted">Querés hacer el bagua de tu casa?</small></p>
+                      <a class="btn btn-primary" href="../pages/contacto.html" role="button">Quiero!</a>
+                    </div>
+                    <img src="../images/bagua.svg" class="asanas" alt="bagua">
+                </div>
+            </div>      
         </div>
     </section>
     <footer>

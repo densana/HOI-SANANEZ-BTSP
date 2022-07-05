@@ -66,6 +66,41 @@ footer .nav-link:hover {
   border: none;
 }
 
+#house-home1 .card-title, #house-home2 .card-title, #tituloyoga .card-title {
+  width: 35%;
+  height: 50%;
+  margin-left: 10%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4vw;
+  color: #96A69B;
+  font-weight: bolder;
+  text-align: left;
+}
+#house-home1 .card-text, #house-home2 .card-text, #tituloyoga .card-text {
+  width: 35%;
+  height: 50%;
+  margin-left: 10%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5vw;
+  font-weight: normal;
+  color: #637388;
+}
+
+#house-home2 .card-title, #tituloyoga .card-title {
+  font-size: 3vw;
+  height: 25%;
+}
+#house-home2 .card-text, #tituloyoga .card-text {
+  font-size: 1.5vw;
+  height: 35%;
+}
+
+#tituloyoga {
+  text-align: center;
+  margin-left: 30%;
+  margin-top: 5%;
+}
+
 /*home*/
 #card-links,
 #card-links2 {
@@ -81,8 +116,9 @@ footer .nav-link:hover {
   background-color: rgb(53, 103, 87);
 }
 
-/*feng*/
+/*lifestyle*/
 .pelotita {
+  margin: 5%;
   -webkit-animation: animacionfeng 6s linear 0s infinite normal forwards;
           animation: animacionfeng 6s linear 0s infinite normal forwards;
 }
@@ -104,12 +140,13 @@ footer .nav-link:hover {
     transform: rotate(360deg);
   }
 }
-/*yoga*/
+/*feng shui*/
 .animacionyoga {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 10px;
+  margin-bottom: 10px;
   -webkit-animation: yoga 5s infinite ease-in-out;
           animation: yoga 5s infinite ease-in-out;
 }
@@ -208,41 +245,6 @@ footer img {
   height: 25px;
 }
 
-#house-home1 .card-title, #house-home2 .card-title, #tituloyoga .card-title {
-  width: 35%;
-  height: 50%;
-  margin-left: 10%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 4vw;
-  color: #96A69B;
-  font-weight: bolder;
-  text-align: left;
-}
-#house-home1 .card-text, #house-home2 .card-text, #tituloyoga .card-text {
-  width: 35%;
-  height: 50%;
-  margin-left: 10%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.5vw;
-  font-weight: normal;
-  color: #637388;
-}
-
-#house-home2 .card-title, #tituloyoga .card-title {
-  font-size: 3vw;
-  height: 25%;
-}
-#house-home2 .card-text, #tituloyoga .card-text {
-  font-size: 1.5vw;
-  height: 35%;
-}
-
-#tituloyoga {
-  text-align: center;
-  margin-left: 30%;
-  margin-top: 5%;
-}
-
 @media screen and (max-width: 576px) {
   /*home*/
   #card-home {
@@ -335,12 +337,31 @@ footer img {
   #sectionyoga #card-yoga1 .asanas,
 #sectionyoga #card-yoga2 .asanas,
 #sectionyoga #card-yoga3 .asanas {
-    height: 200px;
-    width: 150px;
+    height: 50%;
+    width: 50%;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 6px;
+  }
+  #sectionyoga #card-yoga1 .btn,
+#sectionyoga #card-yoga2 .btn,
+#sectionyoga #card-yoga3 .btn {
+    background-color: cadetblue;
+    border: none;
+  }
+  #sectionyoga #card-yoga1 .btn:hover,
+#sectionyoga #card-yoga2 .btn:hover,
+#sectionyoga #card-yoga3 .btn:hover {
+    background-color: rgb(53, 103, 87);
+  }
+
+  #boton-feng {
+    background-color: cadetblue;
+    border: none;
+  }
+  #boton-feng:hover {
+    background-color: rgb(53, 103, 87);
   }
 
   /*contacto*/
@@ -458,6 +479,17 @@ footer img {
     height: 400px;
     width: 300px;
     border-radius: 8px;
+  }
+  #sectionyoga #card-yoga1 .btn,
+#sectionyoga #card-yoga2 .btn,
+#sectionyoga #card-yoga3 .btn {
+    background-color: cadetblue;
+    border: none;
+  }
+  #sectionyoga #card-yoga1 .btn:hover,
+#sectionyoga #card-yoga2 .btn:hover,
+#sectionyoga #card-yoga3 .btn:hover {
+    background-color: rgb(53, 103, 87);
   }
 
   /*contacto*/
