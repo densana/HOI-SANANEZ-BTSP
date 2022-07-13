@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /*header*/
 header, footer {
   background-color: #f2f2f2;
@@ -13,13 +18,14 @@ header .nav-link,
 footer .nav-link {
   color: #96A69B;
   border: none;
+  font-family: "Poppins", sans-serif;
 }
 header .navbar-toggler:hover, footer .navbar-toggler:hover,
 header .navbar-toggler-icon:hover,
 footer .navbar-toggler-icon:hover,
 header .nav-link:hover,
 footer .nav-link:hover {
-  color: white;
+  color: cadetblue;
   font-weight: bolder;
 }
 
@@ -51,6 +57,10 @@ footer .nav-link:hover {
     opacity: 1;
   }
 }
+section {
+  font-family: "Poppins", sans-serif;
+}
+
 /*portadas*/
 .carousel-item {
   max-height: 550px;
@@ -62,7 +72,8 @@ footer .nav-link:hover {
 }
 
 #portadahola,
-#portadayoga {
+#portadayoga,
+#portadafeng {
   border: none;
 }
 
@@ -70,17 +81,17 @@ footer .nav-link:hover {
   width: 35%;
   height: 50%;
   margin-left: 10%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 4vw;
   color: #96A69B;
-  font-weight: bolder;
+  font-weight: bold;
   text-align: left;
 }
 #house-home1 .card-text, #house-home2 .card-text, #tituloyoga .card-text {
   width: 35%;
   height: 50%;
   margin-left: 10%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.5vw;
   font-weight: normal;
   color: #637388;
@@ -100,19 +111,68 @@ footer .nav-link:hover {
   margin-left: 30%;
   margin-top: 5%;
 }
+#tituloyoga .card-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 /*home*/
-#card-links,
-#card-links2 {
-  background-color: rgb(236, 241, 236);
+#section-home {
+  margin: 0;
+  background-color: #f4f5f8;
 }
-#card-links .btn,
-#card-links2 .btn {
+#section-home h3 {
+  padding-top: 50px;
+  text-align: center;
+  color: #666666;
+}
+#section-home #homeextra {
+  padding: 5%;
+}
+#section-home #homeextra .col {
+  justify-content: center;
+}
+#section-home #homeextra .card {
+  background-color: transparent;
+  border: none;
+  justify-content: center;
+  text-align: center;
+  width: 70%;
+  margin: 10%;
+}
+#section-home #homeextra .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+#section-home #homeextra .card img {
+  width: 80px;
+  height: 80px;
+}
+#section-home #homeextra .card .card-text {
+  font-size: 14px;
+}
+#section-home #homeextra .card .btn {
+  background-color: transparent;
+  color: #666666;
+  border: none;
+  font-weight: bolder;
+}
+
+#card-home {
+  background-color: #96A69B;
+  color: #f4f5f8;
+  font-size: 16px;
+  padding: 20px;
+}
+#card-home .btn {
   background-color: cadetblue;
   border: none;
+  margin-top: 10px;
+  background-color: #637388;
 }
-#card-links .btn:hover,
-#card-links2 .btn:hover {
+#card-home .btn:hover {
   background-color: rgb(53, 103, 87);
 }
 
@@ -199,6 +259,9 @@ footer .nav-link:hover {
   height: 550px;
   background: linear-gradient(to bottom, #f2f2f2, #e7eaf2, #bbcdce);
   background-position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .portadacontacto .contacto {
   -webkit-animation-duration: 3s;
@@ -246,29 +309,14 @@ footer img {
 }
 
 @media screen and (max-width: 576px) {
-  /*home*/
-  #card-home {
-    margin: 20px;
-  }
-  #card-home #textohome {
-    text-align: center;
-    font-size: 12px;
-  }
-
-  #homeextra {
-    margin: 15px;
-    row-gap: 10px;
-  }
-
   /*hola*/
   #titulohola {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Poppins", sans-serif;
     margin-top: 20px;
     font-size: 20px;
     text-align: center;
     color: rgb(53, 103, 87);
   }
-
   #cardhola,
 #cardfeng,
 #cardfeng2,
@@ -292,16 +340,14 @@ footer img {
 #cardfeng3 .btn:hover {
     background-color: rgb(53, 103, 87);
   }
-
   /*yoga*/
   .titulo-yogasection {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Poppins", sans-serif;
     margin-top: 20px;
     font-size: 20px;
     text-align: center;
     color: rgb(53, 103, 87);
   }
-
   .pelotitas {
     width: 40px;
     height: 40px;
@@ -312,12 +358,10 @@ footer img {
     height: 30px;
     margin: 5px;
   }
-
   .pelotita {
     width: 30px;
     height: 30px;
   }
-
   #sectionyoga {
     font-size: 10px;
     padding: 10px;
@@ -337,12 +381,9 @@ footer img {
   #sectionyoga #card-yoga1 .asanas,
 #sectionyoga #card-yoga2 .asanas,
 #sectionyoga #card-yoga3 .asanas {
-    height: 50%;
-    width: 50%;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 6px;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
   }
   #sectionyoga #card-yoga1 .btn,
 #sectionyoga #card-yoga2 .btn,
@@ -355,7 +396,6 @@ footer img {
 #sectionyoga #card-yoga3 .btn:hover {
     background-color: rgb(53, 103, 87);
   }
-
   #boton-feng {
     background-color: cadetblue;
     border: none;
@@ -363,50 +403,29 @@ footer img {
   #boton-feng:hover {
     background-color: rgb(53, 103, 87);
   }
-
   /*contacto*/
   .contacto {
-    width: 280px;
-    height: 400px;
-    padding: 20px;
-    margin-top: 30px;
-    position: absolute;
+    margin: 30px;
     text-align: left;
     color: cadetblue;
     font-size: 12px;
   }
 }
 @media screen and (min-width: 576px) {
-  /*home*/
-  #card-home {
-    margin: 50px;
-  }
-  #card-home #textohome {
-    text-align: center;
-    font-size: 16px;
-  }
-
-  #homeextra {
-    margin: 20px;
-    row-gap: 10px;
-    justify-content: space-around;
-  }
-
   /*hola*/
   #titulohola {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Poppins", sans-serif;
     margin-top: 50px;
     font-size: 30px;
     text-align: center;
     color: rgb(53, 103, 87);
+    margin-bottom: 50px;
   }
-
   #textohola {
     font-size: 16px;
     text-align: center;
     margin: 50px;
   }
-
   #cardhola,
 #card-links,
 #card-links2,
@@ -434,17 +453,15 @@ footer img {
 #cardfeng3 .btn:hover {
     background-color: rgb(53, 103, 87);
   }
-
   /*hola*/
   /*yoga*/
   .titulo-yogasection {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Poppins", sans-serif;
     margin-top: 50px;
     font-size: 30px;
     text-align: center;
     color: rgb(53, 103, 87);
   }
-
   .pelotitas {
     width: 80px;
     height: 80px;
@@ -455,12 +472,10 @@ footer img {
     height: 50px;
     margin: 15px;
   }
-
   .pelotita {
     width: 60px;
     height: 60px;
   }
-
   #sectionyoga {
     padding: 20px;
     row-gap: 10px;
@@ -491,15 +506,10 @@ footer img {
 #sectionyoga #card-yoga3 .btn:hover {
     background-color: rgb(53, 103, 87);
   }
-
   /*contacto*/
   .contacto {
-    width: 500px;
-    height: 450px;
-    margin-left: 100px;
-    margin-top: 30px;
+    margin: 50px;
     padding: 20px;
-    position: absolute;
     text-align: left;
     color: cadetblue;
   }

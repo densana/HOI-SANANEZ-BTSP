@@ -1,6 +1,11 @@
 @import "colores";
 @import "textos";
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /*header*/
 header {
     background-color:$color8;
@@ -13,8 +18,9 @@ header {
     .nav-link {
         color: map-get($map: $paleta, $key: tierra);
         border:none;
+        font-family: $font1;
         &:hover {
-            color: $color5;
+            color: $color6;
             font-weight: bolder;
         }
     }
@@ -42,6 +48,10 @@ header {
     
 }
 
+section {
+    font-family: $font1;
+}
+
 /*portadas*/
 .carousel-item {
     max-height: 550px;
@@ -53,7 +63,8 @@ header {
 }
 
 #portadahola,
-#portadayoga {
+#portadayoga,
+#portadafeng {
     border: none;
 }
 
@@ -62,17 +73,17 @@ header {
         width: 35%;
         height: 50%;
         margin-left: 10%;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: $font1;
         font-size: 4vw;
         color: map-get($map: $paleta, $key: tierra);
-        font-weight: bolder;
+        font-weight: bold;
         text-align: left;
     }
     .card-text {
         width: 35%;
         height: 50%;
         margin-left: 10%;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: $font1;
         font-size: 1.5vw;
         font-weight:normal;
         color: map-get($map: $paleta, $key: agua);
@@ -96,14 +107,66 @@ header {
     text-align: center;
     margin-left: 30%;
     margin-top: 5%;
+    .card-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
 
 /*home*/
-#card-links,
-#card-links2 {
-    background-color:$color2;
+#section-home {
+    margin: 0;
+    background-color:$color3;
+    h3 {
+        padding-top: 50px;
+        text-align: center;
+        color: $color7;
+    }
+    #homeextra {
+        padding: 5%;
+        .col {
+            justify-content: center;
+        }
+        .card {
+            background-color: transparent;
+            border: none;
+            justify-content: center;
+            text-align: center;
+            width: 70%;
+            margin: 10%;
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                align-items: center;
+
+            }
+            img {
+                width: 80px;
+                height: 80px;
+            }
+            .card-text {
+                font-size: 14px;
+            }
+            .btn {
+            background-color: transparent;
+            color: $color7;
+            border: none;
+            font-weight: bolder;
+        }
+      }
+    }
+}
+
+#card-home {
+    background-color: map-get($map: $paleta, $key: tierra);
+    color: $color3;
+    font-size: 16px;
+    padding:20px;
     .btn {
         @include botones;
+        margin-top: 10px;
+        background-color: map-get($map: $paleta, $key: agua);
     }
 }
 
@@ -172,6 +235,9 @@ header {
     height: 550px;
     background: linear-gradient(to bottom, #f2f2f2, #e7eaf2,#bbcdce);
     background-position: relative;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
     .contacto {
         animation-duration: 3s;
         animation-name: formulario;
@@ -179,6 +245,7 @@ header {
             @include botones;
         }
     }
+
 }
 
 @keyframes formulario {
@@ -204,19 +271,6 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
-/*home*/
-    #card-home {
-        margin:20px;
-        #textohome {
-            text-align: center;
-            font-size: 12px;
-        }
-    }
-
-    #homeextra {
-        margin:15px;
-        row-gap: 10px;
-    }
 
 /*hola*/
 
@@ -275,12 +329,9 @@ footer {
             background-color: $color3;
             text-align:justify;
             .asanas {
-                height: 50%;
-                width: 50%;
-                padding-right: 10px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                border-radius: 6px;
+            width: 100px;
+            height: 100px;
+            margin:10px;
             }
             .btn {
                 @include botones;
@@ -293,11 +344,7 @@ footer {
 
     /*contacto*/
     .contacto {
-        width: 280px;
-        height: 400px;
-        padding: 20px;
-        margin-top: 30px;
-        position:absolute;
+        margin: 30px;
         text-align: left;
         color: $color6;
         font-size: 12px;
@@ -305,24 +352,11 @@ footer {
 }
 
 @media screen and (min-width: 576px) {
-/*home*/
-    #card-home {
-        margin:50px;
-        #textohome {
-            text-align: center;
-            font-size: 16px;
-            }
-    }
-
-    #homeextra {
-        margin:20px;
-        row-gap: 10px;
-        justify-content: space-around;
-    }
 
 /*hola*/
     #titulohola {
         @include titulosG;
+        margin-bottom: 50px;
     }
 
     #textohola {
@@ -393,12 +427,8 @@ footer {
     
 /*contacto*/
     .contacto {
-        width: 500px;
-        height: 450px;
-        margin-left:100px;
-        margin-top: 30px;
+        margin: 50px;
         padding: 20px;
-        position:absolute;
         text-align: left;
         color: $color6;
     }

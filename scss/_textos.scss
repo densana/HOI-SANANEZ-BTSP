@@ -1,5 +1,7 @@
+$font1:'Poppins', sans-serif;
+
 @mixin titulosS {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $font1;
     margin-top: 20px;
     font-size: 20px;
     text-align: center;
@@ -7,7 +9,7 @@
 }
 
 @mixin titulosG {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $font1;
     margin-top: 50px;
     font-size: 30px;
     text-align: center;
